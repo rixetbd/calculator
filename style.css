@@ -94,11 +94,11 @@ td:hover {
 
 @media only screen and (max-width: 400px) {
 
-    body {
+    /* body {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    } */
 
     .calculator_body {
         width: 100%;
