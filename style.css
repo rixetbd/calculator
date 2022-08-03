@@ -92,10 +92,10 @@ td:hover {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
 
     body {
-        min-height: 80vh;
+        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;

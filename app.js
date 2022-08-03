@@ -11,22 +11,21 @@ let plus = document.getElementById('plus');
 function input(value) {
 
     let getinput = value;
-    let tesxts = calculation.innerText;
+    let calText = calculation.innerText;
+    let signDected = calText.charAt(calText.length - 1);
 
-    let signDected = tesxts.charAt(tesxts.length - 1);
-
-    if (calculation.innerText == 0) {
+    if (calText == 0 || calText == "%" || calText == "/" || calText == "*" || calText == "+") {
         calculation.textContent = value;
     } else if (signDected == "%" || signDected == "/" || signDected == "*" || signDected == "-" || signDected == "+") {
         if (value == "%" || value == "/" || value == "*" || value == "-" || value == "+") {
-            calculation.innerText = tesxts.replace(signDected, value);
+            calText = calText.replace(signDected, value);
         } else {
-            calculation.textContent = calculation.innerText + getinput;
+            calculation.textContent = calText + getinput;
         }
-    } else if (calculation.innerText == "%" || calculation.innerText == "/" || calculation.innerText == "*" || calculation.innerText == "-" || calculation.innerText == "+") {
+    }else if (calText == "%" || calText == "/" || calText == "*" || calText == "-" || calText == "+") {
         calculation.textContent = value;
     } else {
-        calculation.textContent = calculation.innerText + getinput;
+        calculation.textContent = calText + getinput;
     }
 }
 
