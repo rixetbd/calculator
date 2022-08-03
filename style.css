@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 
-*{margin: 0;padding: 0;}
-a{text-decoration: none;}
+* {
+    margin: 0;
+    padding: 0;
+}
 
-html,body{background-color: #262626;font-family: 'Orbitron', sans-serif;color: #f0ffff;}
+a {
+    text-decoration: none;
+}
 
-body{
+html,
+body {
+    background-color: #262626;
+    font-family: 'Orbitron', sans-serif;
+    color: #f0ffff;
+}
+
+body {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -13,63 +24,67 @@ body{
 }
 
 
-td{
+td {
     width: 80px;
     height: 80px;
     text-align: center;
     margin: 10px;
 }
-td:hover{
+
+td:hover {
     border-radius: 5px;
     cursor: pointer;
     background: #262626;
     box-shadow: inset 7px 7px 23px #222222,
-                inset -7px -7px 23px #2a2a2a;
+        inset -7px -7px 23px #2a2a2a;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
-.fa-calculator{
+.fa-calculator {
     font-size: 50px;
     padding-right: 15px;
 }
-.calculator_body{
+
+.calculator_body {
     width: 360px;
     padding: 25px;
     border-radius: 10px;
     background: #262626;
-    box-shadow:  7px 7px 23px #222222,
-             -7px -7px 23px #2a2a2a;
+    box-shadow: 7px 7px 23px #222222,
+        -7px -7px 23px #2a2a2a;
 }
 
-.display{
+.display {
     height: 100px;
     margin: 20px 0;
     text-align: right;
     background: #262626;
     box-shadow: inset 7px 7px 23px #222222,
-                inset -7px -7px 23px #2a2a2a;
+        inset -7px -7px 23px #2a2a2a;
 }
 
-.display div{
+.display div {
     padding: 15px;
     min-height: 20px;
     letter-spacing: 2px;
     overflow: hidden;
 }
 
-.calculator_body h2{
+.calculator_body h2 {
     font-size: 25px;
     letter-spacing: 1px;
 }
-.calculator_body h2 span{
+
+.calculator_body h2 span {
     float: right;
 }
 
 
-.footer, .footer a{
+.footer,
+.footer a {
     color: #f0ffff;
     font-size: 12px;
     letter-spacing: 1px;
@@ -78,9 +93,17 @@ td:hover{
 
 
 @media only screen and (max-width: 600px) {
-    
-.calculator_body{
-    width: 320px;
-    padding: 20px;
+
+    .calculator_body {
+        width: 320px;
+        padding: 10px 20px;
+    }
+
+    td {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        margin: 10px;
+    }
+
 }
-  }
