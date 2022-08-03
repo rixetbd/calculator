@@ -92,17 +92,18 @@ td:hover {
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
 
-    /* body {
+    body {
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
-    } */
+    }
 
     .calculator_body {
         width: 100%;
-        margin: 10px;
+        margin: 10px 0 0 0;
     }
 
     td {
