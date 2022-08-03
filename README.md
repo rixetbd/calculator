@@ -1,11 +1,4 @@
-# calculator
- 
-
-
-
 ![Logo](https://i.ibb.co/kKHCgGJ/calculator-rixetbd.png)
-
-
 
 ## Calculator 🖩
 
