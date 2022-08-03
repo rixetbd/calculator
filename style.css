@@ -80,7 +80,7 @@ td:hover{
 @media only screen and (max-width: 600px) {
     
 .calculator_body{
-    width: 300px;
-    padding: 25px;
+    width: 320px;
+    padding: 20px;
 }
   }
