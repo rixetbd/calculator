@@ -3,7 +3,7 @@
 
 
 
-![Logo](https://i.ibb.co/N35cC7r/Digi-Clock.png)
+![Logo](https://i.ibb.co/kKHCgGJ/calculator-rixetbd.png)
 
 
 
