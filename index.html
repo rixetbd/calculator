@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator || RixetBD</title>
+    <link rel="shortcut icon" href="calculator.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -25,8 +26,8 @@
                 </div>
             </div>
             <div class="display">
-                <div id="result">0</div>
-                <div id="calculation"></div>
+                <div id="result"></div>
+                <div id="calculation">0</div>
             </div>
 
             <table border="0" width="100%">
@@ -34,7 +35,7 @@
                     <tr>
                         <td id="clear">C</td>
                         <td onclick="input('%')">%</td>
-                        <td><i class="fa-solid fa-delete-left"></i></td>
+                        <td id="deleteOne"><i class="fa-solid fa-delete-left"></i></td>
                         <td onclick="input('/')" id="divide"><i class="fa-solid fa-divide"></i></td>
                     </tr>
                     <tr>
