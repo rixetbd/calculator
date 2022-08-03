@@ -17,7 +17,7 @@ body {
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,6 +93,13 @@ td:hover {
 
 
 @media only screen and (max-width: 600px) {
+
+    body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     .calculator_body {
         width: 320px;
