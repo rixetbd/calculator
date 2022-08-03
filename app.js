@@ -43,6 +43,7 @@ deleteOne.addEventListener('click', function () {
 
     if (calculation.innerText.length == 1) {
         calculation.textContent = "0";
+        result.textContent = "";
     } else {
         let disText = calculation.textContent;
         let calArr = disText.slice(0, -1);

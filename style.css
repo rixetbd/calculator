@@ -95,15 +95,15 @@ td:hover {
 @media only screen and (max-width: 600px) {
 
     body {
-        height: 100vh;
+        min-height: 80vh;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
     .calculator_body {
-        width: 320px;
-        padding: 10px 20px;
+        width: 100%;
+        margin: 0 10px;
     }
 
     td {
