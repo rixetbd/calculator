@@ -102,6 +102,7 @@ td:hover {
     }
 
     .calculator_body {
+        position: fixed;
         width: 100%;
         margin: 0 10px;
     }
