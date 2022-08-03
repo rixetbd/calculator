@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+
+html,body{background-color: #262626;font-family: 'Orbitron', sans-serif;color: #f0ffff;}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+td{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin: 10px;
+}
+td:hover{
+    border-radius: 5px;
+    cursor: pointer;
+    background: #262626;
+    box-shadow: inset 7px 7px 23px #222222,
+                inset -7px -7px 23px #2a2a2a;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.fa-calculator{
+    font-size: 50px;
+    padding-right: 15px;
+}
+.calculator_body{
+    width: 360px;
+    padding: 25px;
+    background: #262626;
+    box-shadow:  7px 7px 23px #222222,
+             -7px -7px 23px #2a2a2a;
+}
+
+.display{
+    height: 100px;
+    margin: 20px 0;
+    text-align: right;
+    background: #262626;
+    box-shadow: inset 7px 7px 23px #222222,
+                inset -7px -7px 23px #2a2a2a;
+}
+
+.display div{
+    padding: 15px;
+}
+
+.calculator_body h2{
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.calculator_body h2 span{
+    float: right;
+}
+
+
+.footer, .footer a{
+    color: #f0ffff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+
+.calculator_body{
+    width: 360px;
+    padding: 25px;
+    background: #262626;
+    box-shadow:  7px 7px 23px #222222,
+             -7px -7px 23px #2a2a2a;
+}
+
+@media only screen and (max-width: 600px) {
+    
+.calculator_body{
+    width: 300px;
+    padding: 25px;
+}
+  }
