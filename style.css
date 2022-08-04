@@ -103,6 +103,10 @@ td:hover {
         justify-content: center;
     } */
 
+    body{
+        position: fixed;
+    }
+
     .calculator_body {
         position: static;
         width: 100%;
