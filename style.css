@@ -97,11 +97,11 @@ td:hover {
 
 @media screen and (max-width: 600px) {
 
-    /* body {
+    body {
         display: flex;
         align-items: center;
         justify-content: center;
-    } */
+    }
 
     body{
         position: fixed;
