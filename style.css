@@ -113,19 +113,19 @@ td:hover {
         box-shadow: none;
     }
     .display {
-        height: 160px;
+        height: 100px;
     }
     .display div {
-        min-height: 80px;
-        line-height: 80px;
+        min-height: 50px;
+        line-height: 50px;
         margin: 0 15px;
         font-size: 25px;
         overflow: auto;
     }
     td {
         font-size: 30px;
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px;
         text-align: center;
         margin: 10px;
     }
