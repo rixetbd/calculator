@@ -105,6 +105,7 @@ td:hover {
 
     body{
         position: fixed;
+        background-color: red;
     }
 
     .calculator_body {
@@ -113,7 +114,8 @@ td:hover {
         display: grid;
         padding: 0 25px;
         border-radius: 10px;
-        background: #262626;
+        /* background: #262626; */
+        background-color: aquamarine;
         box-shadow: none;
     }
     .display {
