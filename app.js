@@ -41,6 +41,9 @@ clear.addEventListener('click', function () {
 })
 
 equal.addEventListener('click', function () {
+    // if(calculation.textContent.slice(0,0) == ""){
+    //     Math.sqrt(0)
+    // }
     result.textContent = eval(calculation.innerHTML);
 })
 
