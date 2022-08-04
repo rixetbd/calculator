@@ -103,11 +103,6 @@ td:hover {
         justify-content: center;
     }
 
-    body{
-        position: fixed;
-        background-color: red;
-    }
-
     .calculator_body {
         position: static;
         width: 100%;
@@ -128,13 +123,10 @@ td:hover {
         font-size: 25px;
         overflow: auto;
     }
-    table{
-        padding-bottom: 50px;
-    }
     td {
-        font-size: 20px;
-        width: 70px;
-        height: 70px;
+        font-size: 30px;
+        width: 80px;
+        height: 80px;
         text-align: center;
         margin: 10px;
     }
