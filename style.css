@@ -58,7 +58,8 @@ td:hover {
 }
 
 .display {
-    height: 100px;
+    overflow: hidden;
+    height: 160px;
     margin: 20px 0;
     text-align: right;
     background: #262626;
@@ -67,10 +68,12 @@ td:hover {
 }
 
 .display div {
-    padding: 15px;
-    min-height: 20px;
+    min-height: 80px;
     letter-spacing: 2px;
     overflow: hidden;
+    line-height: 80px;
+    margin-right: 15px;
+    font-size: 30px;
 }
 
 .calculator_body h2 {
@@ -95,7 +98,7 @@ td:hover {
 @media only screen and (max-width: 600px) {
 
     body {
-        height: auto;
+        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -103,14 +106,34 @@ td:hover {
 
     .calculator_body {
         width: 100%;
-        margin: 10px 0 0 0;
+        display: grid;
+        padding: 0 25px;
+        border-radius: 10px;
+        background: #262626;
+        box-shadow: none;
     }
-
+    .display {
+        height: 160px;
+    }
+    .display div {
+        min-height: 80px;
+        line-height: 80px;
+        margin-right: 15px;
+        font-size: 25px;
+        overflow: auto;
+    }
+    table{
+        padding-bottom: 50px;
+    }
     td {
-        width: 60px;
-        height: 60px;
+        font-size: 20px;
+        width: 70px;
+        height: 70px;
         text-align: center;
         margin: 10px;
     }
+}
 
+.text_left{
+    text-align: left;
 }

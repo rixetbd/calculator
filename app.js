@@ -27,6 +27,12 @@ function input(value) {
     } else {
         calculation.textContent = calText + getinput;
     }
+
+    // if(calText.length >= 15){
+    //     calculation.classList.add("text_left");
+    // }else{
+    //     calculation.classList.remove("text_left");
+    // }
 }
 
 clear.addEventListener('click', function () {
@@ -40,7 +46,9 @@ equal.addEventListener('click', function () {
 
 deleteOne.addEventListener('click', function () {
 
-    if (calculation.innerText.length == 1) {
+    let calText = calculation.innerText;
+
+    if (calText.length == 1) {
         calculation.textContent = "0";
         result.textContent = "";
     } else {
@@ -48,4 +56,10 @@ deleteOne.addEventListener('click', function () {
         let calArr = disText.slice(0, -1);
         calculation.textContent = calArr;
     }
+
+    // if(calText.length >= 15){
+    //     calculation.classList.add("text_left");
+    // }else{
+    //     calculation.classList.remove("text_left");
+    // }
 })
