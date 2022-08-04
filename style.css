@@ -124,8 +124,8 @@ td:hover {
     }
     td {
         font-size: 30px;
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
         text-align: center;
         margin: 10px;
     }
@@ -133,4 +133,16 @@ td:hover {
 
 .text_left{
     text-align: left;
+}
+.align_items_center{
+    align-items: center;
+}
+
+.justify_content_between{
+    justify-content: space-between;
+}
+
+#bgColor i{
+    font-size: 25px;
+    cursor: pointer;
 }

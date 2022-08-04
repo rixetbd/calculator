@@ -66,3 +66,20 @@ deleteOne.addEventListener('click', function () {
     //     calculation.classList.remove("text_left");
     // }
 })
+
+let bgColor = document.getElementById('bgColor');
+
+bgColor.addEventListener('click', function(){
+
+    let icon = document.querySelector('#bgColor i');
+    var testClass = icon.className;
+
+    if(testClass == "fa-solid fa-sun"){
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+    }else{
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+    }
+
+});
