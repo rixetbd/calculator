@@ -104,6 +104,7 @@ td:hover {
     }
 
     .calculator_body {
+        position: static;
         width: 100%;
         display: grid;
         padding: 0 25px;
