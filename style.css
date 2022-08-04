@@ -16,6 +16,11 @@ body {
     color: #f0ffff;
 }
 
+/* body.dark{
+    background-color: #262626;
+} */
+
+
 body {
     height: 100vh;
     display: flex;
