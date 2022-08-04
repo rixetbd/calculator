@@ -109,8 +109,7 @@ td:hover {
         display: grid;
         padding: 0 25px;
         border-radius: 10px;
-        /* background: #262626; */
-        background-color: aquamarine;
+        background: #262626;
         box-shadow: none;
     }
     .display {
@@ -119,7 +118,7 @@ td:hover {
     .display div {
         min-height: 80px;
         line-height: 80px;
-        margin-right: 15px;
+        margin: 0 15px;
         font-size: 25px;
         overflow: auto;
     }
