@@ -11,14 +11,17 @@ a {
 
 html,
 body {
-    background-color: #262626;
     font-family: 'Orbitron', sans-serif;
-    color: #f0ffff;
 }
 
-/* body.dark{
+.body_dark{
     background-color: #262626;
-} */
+    color: #f0ffff;
+}
+.body_light{
+    color: #262626;
+    background-color: #f0ffff;
+}
 
 
 body {
@@ -40,11 +43,21 @@ td:hover {
     border-radius: 5px;
     cursor: pointer;
     color: 	#44D62C;
-    text-shadow: 0px 0px 6px rgba(68,214,44,0.68);
+    text-shadow: 0px 0px 4px rgba(68,214,44,0.68);
+}
+
+.body_light td:hover {
+    background: #f0ffff;
+    box-shadow: inset 7px 7px 23px #2222221f,
+        inset -7px -7px 23px #2a2a2a11;
+}
+
+.body_dark td:hover {
     background: #262626;
     box-shadow: inset 7px 7px 23px #222222,
         inset -7px -7px 23px #2a2a2a;
 }
+
 
 .d-flex {
     display: flex;
@@ -59,9 +72,16 @@ td:hover {
     width: 360px;
     padding: 25px;
     border-radius: 10px;
-    background: #262626;
+}
+
+.body_light .calculator_body{
+    box-shadow: 7px 7px 23px #2222221a,
+    -7px -7px 23px #2a2a2a1c;
+}
+
+.body_dark .calculator_body{
     box-shadow: 7px 7px 23px #222222,
-        -7px -7px 23px #2a2a2a;
+    -7px -7px 23px #2a2a2a;
 }
 
 .display {
@@ -69,10 +89,18 @@ td:hover {
     height: 160px;
     margin: 20px 0;
     text-align: right;
-    background: #262626;
+}
+
+.body_light .display{
+    box-shadow: inset 7px 7px 23px #2222221f,
+        inset -7px -7px 23px #2a2a2a1f;
+}
+
+.body_dark .display{
     box-shadow: inset 7px 7px 23px #222222,
         inset -7px -7px 23px #2a2a2a;
 }
+
 
 .display div {
     min-height: 80px;
@@ -93,9 +121,17 @@ td:hover {
 }
 
 
+.body_dark .footer,
+.body_dark .footer a {
+    color: #f0ffff;
+}
+
+.body_light .footer,
+.body_light .footer a {
+    color: #262626;
+}
 .footer,
 .footer a {
-    color: #f0ffff;
     font-size: 12px;
     letter-spacing: 1px;
     padding-top: 5px;
@@ -116,7 +152,6 @@ td:hover {
         display: grid;
         padding: 0 25px;
         border-radius: 10px;
-        background: #262626;
         box-shadow: none;
     }
     .display {

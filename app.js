@@ -87,18 +87,26 @@ deleteOne.addEventListener('click', function () {
 })
 
 let bgColor = document.getElementById('bgColor');
+let mainBody = document.getElementById('mainBody');
 
 bgColor.addEventListener('click', function () {
 
     let icon = document.querySelector('#bgColor i');
     var testClass = icon.className;
-
+    var bodyClass = mainBody.className;
     if (testClass == "fa-solid fa-sun") {
         icon.classList.remove('fa-sun');
         icon.classList.add('fa-moon');
     } else {
         icon.classList.remove('fa-moon');
         icon.classList.add('fa-sun');
+    }
+    if (bodyClass == "body_dark") {
+        mainBody.classList.remove('body_dark');
+        mainBody.classList.add('body_light');
+    } else {
+        mainBody.classList.remove('body_light');
+        mainBody.classList.add('body_dark');
     }
 
 });
