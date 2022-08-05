@@ -147,6 +147,7 @@ td:hover {
     }
 
     .calculator_body {
+height:100vh;
         position: static;
         width: 100%;
         display: grid;
