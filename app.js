@@ -14,17 +14,15 @@ function input(value) {
     let calText = calculation.innerText;
     let signDected = calText.charAt(calText.length - 1);
 
-    if (calText == 0 || calText == "%" || calText == "/" || calText == "*" || calText == "+") {
-        calculation.textContent = value;
-    } else if (signDected == "%" || signDected == "/" || signDected == "*" || signDected == "-" || signDected == "+") {
-        if (value == "%" || value == "/" || value == "*" || value == "-" || value == "+") {
-            calText = calText.replace(signDected, value);
+    if (calText == 0 || calText == "%" || calText == "/" || calText == "*" || calText == "+" || calText == "^" || calText == "(" || calText == ")") {
+        calculation.innerText = value;
+    } else if (signDected == "%" || signDected == "/" || signDected == "*" || signDected == "-" || signDected == "+" || signDected == "^" || signDected == "(" || signDected == ")") {
+        if (getinput == "%" || getinput == "/" || getinput == "*" || getinput == "-" || getinput == "+" || getinput == "^" || getinput == "(" || getinput == ")") {
+            calculation.innerText = calText.slice(0, - 1) + getinput;
         } else {
-            calculation.textContent = calText + getinput;
+            calculation.innerText = calText + getinput;
         }
-    }else if (calText == "%" || calText == "/" || calText == "*" || calText == "-" || calText == "+") {
-        calculation.textContent = value;
-    } else {
+    }else {
         calculation.textContent = calText + getinput;
     }
 
