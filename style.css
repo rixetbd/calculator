@@ -39,6 +39,8 @@ td {
 td:hover {
     border-radius: 5px;
     cursor: pointer;
+    color: 	#44D62C;
+    text-shadow: 0px 0px 6px rgba(68,214,44,0.68);
     background: #262626;
     box-shadow: inset 7px 7px 23px #222222,
         inset -7px -7px 23px #2a2a2a;
