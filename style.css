@@ -89,6 +89,7 @@ td:hover {
     height: 160px;
     margin: 20px 0;
     text-align: right;
+    border-radius: 5px;
 }
 
 .body_light .display{
@@ -147,11 +148,10 @@ td:hover {
     }
 
     .calculator_body {
-min-height:80vh;
         position: static;
         width: 100%;
         display: grid;
-        padding: 0 25px;
+        padding: 30px 25px;
         border-radius: 10px;
         box-shadow: none;
     }
